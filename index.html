@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hack Club Melčice — Make something cool.</title>
+<meta name="description" content="Hack Club Melčice — školský klub pre všetkých, ktorí chcú programovať, experimentovať a vytvárať vlastné projekty. Zadarmo, bez skúseností.">
+
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="30" height="30">
+          <rect x="2" y="2" width="36" height="36" rx="10" fill="var(--red)"/>
+          <path d="M13 27 L20 12 L27 27 M15.5 21.5 H24.5" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </span>
+      Hack Club Melčice
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Otvoriť menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#o-klube">O Hack Clube</a>
+      <a href="#co-budeme-robit">Čo budeme robiť</a>
+      <a href="#odmeny">Odmeny</a>
+      <a class="nav-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdM-R-MbNgM8bTWdScJOQt7yuqwicrzz55iEtlyjYVrxro1CA/viewform?usp=dialog" target="_blank" rel="noopener">Pridaj sa →</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-deco" aria-hidden="true">
+      <svg class="deco deco-star" viewBox="0 0 100 100" width="46">
+        <path d="M50 4 L58 40 L96 44 L62 58 L70 96 L50 74 L30 96 L38 58 L4 44 L42 40 Z" fill="var(--yellow)"/>
+      </svg>
+      <svg class="deco deco-blob" viewBox="0 0 200 200" width="180">
+        <path fill="var(--purple)" d="M45,-58C58,-49,68,-34,72,-17C76,-1,74,17,64,31C55,45,37,54,18,62C0,70,-20,77,-38,71C-56,65,-72,45,-77,23C-81,1,-73,-24,-59,-42C-45,-60,-24,-72,-2,-71C21,-71,32,-68,45,-58Z" transform="translate(100 100)"/>
+      </svg>
+      <svg class="deco deco-ring" viewBox="0 0 100 100" width="70">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="var(--blue)" stroke-width="10"/>
+      </svg>
+      <svg class="deco deco-squiggle" viewBox="0 0 220 40" width="150">
+        <path d="M4 30 Q 30 4, 56 30 T 108 30 T 160 30 T 212 30" fill="none" stroke="var(--green)" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+      <svg class="deco deco-bolt" viewBox="0 0 60 90" width="34">
+        <path d="M35 2 L6 50 H26 L20 88 L54 36 H32 Z" fill="var(--orange)"/>
+      </svg>
+    </div>
+
+    <div class="hero-inner">
+      <p class="eyebrow">HACK CLUB · MELČICE · 2026/27</p>
+      <h1 class="hero-title">
+        Make something<br>
+        <span class="hero-title-cool">cool<span class="hero-dot">.</span></span>
+      </h1>
+      <p class="hero-sub">Školský Hack Club pre všetkých, ktorí chcú programovať, experimentovať a vytvárať vlastné projekty.</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-big" href="https://docs.google.com/forms/d/e/1FAIpQLSdM-R-MbNgM8bTWdScJOQt7yuqwicrzz55iEtlyjYVrxro1CA/viewform?usp=dialog" target="_blank" rel="noopener">
+          Pridaj sa k nám →
+        </a>
+        <a class="hero-scroll" href="#o-klube">Zisti, čo ťa čaká ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= O HACK CLUBE ================= -->
+  <section class="section" id="o-klube">
+    <div class="section-inner what-grid">
+      <div class="what-text">
+        <h2 class="h2">Nie ďalšia hodina informatiky.</h2>
+        <p class="lead">Hack Club je globálna komunita mladých ľudí, ktorí sa učia technológie tým, že ich používajú na tvorbu vlastných projektov.</p>
+        <p class="lead-sub">Je úplne zadarmo a postavený na jednej myšlienke: najlepšie sa naučíš programovať tak, že si niečo naozaj postavíš.</p>
+      </div>
+
+      <div class="what-cards">
+        <div class="what-card card-red">
+          <span class="what-tag">BUILD</span>
+          <p>Vytvor vlastný projekt.</p>
+        </div>
+        <div class="what-card card-blue">
+          <span class="what-tag">LEARN</span>
+          <p>Nauč sa nové technológie.</p>
+        </div>
+        <div class="what-card card-yellow">
+          <span class="what-tag">SHIP</span>
+          <p>Dokonči ho a ukáž ostatným.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ČO VYTVORÍŠ ================= -->
+  <section class="section section-alt" id="co-budeme-robit">
+    <div class="section-inner">
+      <h2 class="h2 h2-center">Čo môžeš vytvoriť?</h2>
+
+      <div class="build-grid">
+        <div class="build-card">
+          <div class="build-icon">🌐</div>
+          <h3>Weby</h3>
+          <p>Vlastné stránky, portfóliá alebo šialené nápady, ktoré fungujú v prehliadači.</p>
+        </div>
+        <div class="build-card">
+          <div class="build-icon">🎮</div>
+          <h3>Hry</h3>
+          <p>Od jednoduchých 2D hier po niečo, čo prekvapí aj teba samého.</p>
+        </div>
+        <div class="build-card">
+          <div class="build-icon">🤖</div>
+          <h3>AI projekty</h3>
+          <p>Experimenty s modelmi, chatbotmi a automatizáciou.</p>
+        </div>
+        <div class="build-card">
+          <div class="build-icon">📱</div>
+          <h3>Aplikácie</h3>
+          <p>Nástroje, ktoré riešia reálny problém — tvoj alebo niekoho iného.</p>
+        </div>
+        <div class="build-card">
+          <div class="build-icon">🎨</div>
+          <h3>Kreatívny kód</h3>
+          <p>Grafika, animácie a vizuály generované kódom.</p>
+        </div>
+        <div class="build-card build-card-highlight">
+          <div class="build-icon">💡</div>
+          <h3>Tvoj nápad</h3>
+          <p>Máš niečo iné v hlave? Presne o to v Hack Clube ide.</p>
+        </div>
+      </div>
+
+      <p class="reassure">Nemusíš byť expert. Stačí začať.</p>
+    </div>
+  </section>
+
+  <!-- ================= ODMENY ================= -->
+  <section class="section section-rewards" id="odmeny">
+    <div class="section-inner">
+      <h2 class="h2 h2-light h2-center">Postav projekt.<br>Získaj odmenu.</h2>
+      <p class="lead lead-light lead-center">Keď niečo vytvoríš, nemusí to zostať iba v tvojom počítači. Hack Club má programy, v ktorých môžeš za svoje projekty získať rôzne odmeny.</p>
+
+      <div class="reward-grid">
+        <div class="reward-card">
+          <div class="reward-icon">🎟️</div>
+          <p>Event opportunities</p>
+        </div>
+        <div class="reward-card">
+          <div class="reward-icon">🛠️</div>
+          <p>Hardware &amp; maker gear</p>
+        </div>
+        <div class="reward-card">
+          <div class="reward-icon">🎨</div>
+          <p>Stickers &amp; merch</p>
+        </div>
+        <div class="reward-card">
+          <div class="reward-icon">💻</div>
+          <p>Project resources</p>
+        </div>
+        <div class="reward-card">
+          <div class="reward-icon">🎁</div>
+          <p>Special rewards</p>
+        </div>
+      </div>
+
+      <p class="reward-note">Odmeny závisia od konkrétneho Hack Club programu alebo akcie a od jeho pravidiel — nejde o automatický nárok pri každom projekte.</p>
+
+      <a class="link-arrow" href="https://hackclub.com/programs" target="_blank" rel="noopener">Pozrieť Hack Club programy →</a>
+    </div>
+  </section>
+
+  <!-- ================= PREČO SA PRIDAŤ ================= -->
+  <section class="section" id="preco">
+    <div class="section-inner why-grid">
+      <h2 class="h2">Prečo sa pridať?</h2>
+      <ul class="why-list">
+        <li><span class="why-check">✓</span> Naučíš sa programovať prakticky</li>
+        <li><span class="why-check">✓</span> Budeš vytvárať vlastné projekty</li>
+        <li><span class="why-check">✓</span> Spoznáš ďalších ľudí, ktorí majú radi technológie</li>
+        <li><span class="why-check">✓</span> Môžeš sa zapojiť do Hack Club programov</li>
+        <li><span class="why-check">✓</span> Získaš skúsenosti, ktoré môžeš ukázať ďalej</li>
+        <li><span class="why-check">✓</span> A hlavne — budeš niečo reálne tvoriť</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= MADE IN MELČICE ================= -->
+  <section class="section section-alt" id="melcice">
+    <div class="section-inner local-block">
+      <p class="eyebrow eyebrow-dark">GYMNÁZIUM ĽUDOVÍTA ŠTÚRA</p>
+      <h2 class="h2">Made in Melčice.</h2>
+      <p class="lead">Hack Club Melčice je študentský Hack Club na Gymnáziu Ľudovíta Štúra.</p>
+      <p class="lead-sub">Budeme spolu programovať, experimentovať, pomáhať si a vytvárať vlastné projekty — od úplných začiatkov až po veci, ktoré môžeme reálne ukázať svetu.</p>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA ================= -->
+  <section class="final-cta">
+    <div class="final-deco" aria-hidden="true">
+      <svg class="deco deco-star deco-star-2" viewBox="0 0 100 100" width="40">
+        <path d="M50 4 L58 40 L96 44 L62 58 L70 96 L50 74 L30 96 L38 58 L4 44 L42 40 Z" fill="var(--yellow)"/>
+      </svg>
+      <svg class="deco deco-ring deco-ring-2" viewBox="0 0 100 100" width="60">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="var(--green)" stroke-width="9"/>
+      </svg>
+    </div>
+    <div class="final-inner">
+      <h2 class="final-title">Ready to build?</h2>
+      <p class="final-sub">Pridaj sa k Hack Clubu Melčice.</p>
+      <a class="btn btn-primary btn-huge" href="https://docs.google.com/forms/d/e/1FAIpQLSdM-R-MbNgM8bTWdScJOQt7yuqwicrzz55iEtlyjYVrxro1CA/viewform?usp=dialog" target="_blank" rel="noopener">
+        Registrovať sa →
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-brand">Hack Club Melčice</p>
+    <p class="footer-tagline">Build. Learn. Ship.</p>
+    <p class="footer-copy">© 2026 Hack Club Melčice</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
