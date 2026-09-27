@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hack Club Melčice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<canvas id="c" aria-hidden="true"></canvas>
+
+<nav class="floatnav glass" aria-label="Hlavná navigácia">
+  <span>HACK CLUB MELČICE</span>
+  <button class="mapbtn" id="mapOpen" aria-haspopup="dialog" aria-controls="mapOverlay" title="Mapa lesa" aria-label="Otvoriť mapu lesa">🗺</button>
+</nav>
+
+<div class="mapoverlay" id="mapOverlay" role="dialog" aria-modal="true" aria-label="Mapa lesa">
+  <div class="mapcard glass">
+    <h3>Kde sa nachádzaš</h3>
+    <ul class="maplist" id="mapList">
+      <li><button data-go="start">Začiatok cesty</button></li>
+      <li class="grp">OBJAV KLUB</li>
+      <li><button data-go="objav-hub">Rázcestie</button></li>
+      <li><button data-go="onas">O nás</button></li>
+      <li><button data-go="tim">Náš tím</button></li>
+      <li><button data-go="hackclub">Hack Club</button></li>
+      <li><button data-go="projekty">Projekty</button></li>
+      <li class="grp">PRIDAJ SA</li>
+      <li><button data-go="pridaj-hub">Rázcestie</button></li>
+      <li><button data-go="harmonogram">Harmonogram</button></li>
+      <li><button data-go="pridajsa-final">Pridaj sa</button></li>
+    </ul>
+    <button class="mapclose" id="mapClose">Zavrieť</button>
+  </div>
+</div>
+
+<main class="stage">
+  <section class="scene active" id="start" tabindex="-1">
+    <div class="eyebrow">ZŠ s MŠ Jána Smreka · Melčice-Lieskové</div>
+    <h1 class="title-xl">HACK CLUB<br>MELČICE</h1>
+    <p class="sub">Pred tebou je les. Vyber si cestu.</p>
+    <div class="signs">
+      <button class="sign" data-go="objav-hub">OBJAV KLUB<small>spoznaj, čo tu tvoríme</small></button>
+      <button class="sign" data-go="pridaj-hub">PRIDAJ SA<small>staň sa súčasťou</small></button>
+    </div>
+  </section>
+
+  <section class="scene" id="objav-hub" tabindex="-1">
+    <button class="back" data-go="start">← Späť do lesa</button>
+    <div class="eyebrow">OBJAV KLUB</div>
+    <h2 class="title-lg">Kam ťa to zaujíma?</h2>
+    <div class="signs">
+      <button class="sign" data-go="onas">O nás</button>
+      <button class="sign" data-go="tim">Náš tím</button>
+      <button class="sign" data-go="hackclub">Hack Club</button>
+      <button class="sign" data-go="projekty">Projekty</button>
+    </div>
+  </section>
+
+  <section class="scene" id="onas" tabindex="-1">
+    <button class="back" data-go="objav-hub">← Späť na rázcestie</button>
+    <div class="panel glass">
+      <h2 class="title-lg">Nie je to len ďalší školský krúžok.</h2>
+      <p>Hack Club Melčice je študentská technologická komunita na ZŠ s MŠ Jána Smreka Melčice-Lieskové.</p>
+      <p>Stretávame sa, učíme sa nové technológie a pracujeme na vlastných projektoch. Programovanie, weby, 3D tlač, hardvér a ďalšie technológie spájame s kreativitou a vlastnými nápadmi.</p>
+      <p><strong>Nemusíš byť expert.</strong> Stačí mať chuť niečo skúsiť.</p>
+    </div>
+    <div class="signs"><button class="sign" data-go="tim">Ďalej: Náš tím →</button></div>
+  </section>
+
+  <section class="scene" id="tim" tabindex="-1">
+    <button class="back" data-go="objav-hub">← Späť na rázcestie</button>
+    <div class="eyebrow">NÁŠ TÍM</div>
+    <div class="cards">
+      <div class="card glass"><h3>Michal Prostinák</h3><span class="role">Zakladateľ a vedúci klubu</span><p>Stál pri vzniku Hack Clubu Melčice a stará sa o jeho fungovanie, projekty, web a ďalší rozvoj klubu.</p></div>
+      <div class="card glass"><h3>Michal Jánošík</h3><span class="role">Manažér 3D a hardvéru</span><p>Stará sa o 3D projekty, modelovanie, 3D tlač a hardvérové aktivity klubu.</p></div>
+      <div class="card glass"><h3>Denisa Haláčková</h3><span class="role">Pedagogický dohľad</span><p>Učiteľka na ZŠ s MŠ Jána Smreka, ktorá podporila vznik Hack Clubu Melčice a zabezpečuje pedagogický dohľad.</p></div>
+    </div>
+    <div class="signs"><button class="sign" data-go="hackclub">Ďalej: Hack Club →</button></div>
+  </section>
+
+  <section class="scene" id="hackclub" tabindex="-1">
+    <button class="back" data-go="objav-hub">← Späť na rázcestie</button>
+    <div class="panel glass">
+      <h2 class="title-lg">Organizácia, ktorej sme súčasťou.</h2>
+      <p>Hack Club je medzinárodná nezisková organizácia a komunita mladých ľudí, ktorí sa zaujímajú o technológie a tvorenie.</p>
+      <p>Pomáha študentom zakladať vlastné kluby, organizovať stretnutia, vytvárať projekty a spájať sa s ďalšími mladými tvorcami z celého sveta.</p>
+      <p><strong>Naša škola. Naša komunita. Súčasť niečoho väčšieho.</strong></p>
+      <div class="signs"><a class="sign cta" href="https://hackclub.com" target="_blank" rel="noopener">OBJAVIŤ HACK CLUB →</a></div>
+    </div>
+    <div class="signs"><button class="sign" data-go="projekty">Ďalej: Projekty →</button></div>
+  </section>
+
+  <section class="scene" id="projekty" tabindex="-1">
+    <button class="back" data-go="objav-hub">← Späť na rázcestie</button>
+    <div class="eyebrow">PROJEKTY</div>
+    <div class="cards">
+      <div class="card glass"><h3>Boba Drops</h3><p>Náš prvý webový projekt.</p><span class="tag">HTML · CSS</span></div>
+      <div class="card glass"><h3>Bake Build</h3><p>Navrhni vlastný model a premeň ho na skutočný predmet pomocou 3D tlače.</p><span class="tag">3D modelovanie · 3D tlač</span></div>
+      <div class="card glass"><h3>Swirl</h3><p>Projekt zameraný na web, dizajn a CSS.</p><span class="tag">HTML · CSS</span></div>
+    </div>
+    <p style="margin-top:1.6em; font-weight:700;">A toto je len začiatok.</p>
+    <div class="signs"><button class="sign" data-go="pridaj-hub">Chceš sa pridať? →</button></div>
+  </section>
+
+  <section class="scene" id="pridaj-hub" tabindex="-1">
+    <button class="back" data-go="start">← Späť do lesa</button>
+    <div class="eyebrow">PRIDAJ SA</div>
+    <h2 class="title-lg">Tvoja cesta ide ďalej.</h2>
+    <div class="signs">
+      <button class="sign" data-go="harmonogram">Harmonogram</button>
+      <button class="sign" data-go="pridajsa-final">Pridaj sa</button>
+    </div>
+  </section>
+
+  <section class="scene" id="harmonogram" tabindex="-1">
+    <button class="back" data-go="pridaj-hub">← Späť na rázcestie</button>
+    <div class="panel glass">
+      <div class="eyebrow">PRVÉ STRETNUTIE</div>
+      <h2 class="title-lg">2. októbra 2026</h2>
+      <p><strong>13:30</strong> — príchod · <strong>13:40</strong> — začiatok · približne 90 minút<br>📍 INF učebňa</p>
+    </div>
+    <div class="steps">
+      <div class="step glass"><span class="num">01</span><p>Spoznáme Hack Club</p></div>
+      <div class="step glass"><span class="num">02</span><p>Zoznámime sa</p></div>
+      <div class="step glass"><span class="num">03</span><p>Ako budeme fungovať</p></div>
+      <div class="step glass"><span class="num">04</span><p>Prvý projekt</p></div>
+    </div>
+    <p>Prvé stretnutie je určené aj pre úplných začiatočníkov.</p>
+    <div class="signs"><button class="sign" data-go="pridajsa-final">Ďalej: Pridaj sa →</button></div>
+  </section>
+
+  <section class="scene" id="pridajsa-final" tabindex="-1">
+    <button class="back" data-go="pridaj-hub">← Späť na rázcestie</button>
+    <div class="panel glass">
+      <h2 class="title-lg">Tvoja cesta môže začať práve tu.</h2>
+      <p>Ak ťa zaujíma programovanie, technológie, 3D tlač, tvorenie alebo jednoducho rád skúšaš nové veci, Hack Club Melčice je pre teba.</p>
+      <p>Nemusíš mať skúsenosti. Učíme sa hlavne tým, že tvoríme.</p>
+      <div class="signs"><button class="sign cta" id="openSignup">PRIHLÁSIŤ SA</button></div>
+    </div>
+    <footer><strong>HACK CLUB MELČICE</strong>Tvoríme. Skúšame. Učíme sa spolu.<br>ZŠ s MŠ Jána Smreka, Melčice-Lieskové, Slovensko<br>© 2026 Michal Prostinák</footer>
+  </section>
+</main>
+
+<div class="modal" id="signupModal" role="dialog" aria-modal="true" aria-labelledby="signupTitle">
+  <form class="modalcard glass" id="signupForm">
+    <h3 id="signupTitle" class="title-lg" style="font-size:1.4rem;">Poď do toho.</h3>
+    <p style="font-size:.9rem;">Napíš nám svoje meno a e-mail, ozveme sa ti.</p>
+    <label class="sr-only" for="sName">Meno</label><input id="sName" type="text" placeholder="Meno" required>
+    <label class="sr-only" for="sMail">E-mail</label><input id="sMail" type="email" placeholder="E-mail" required>
+    <button class="sign cta" type="submit">Odoslať</button>
+    <p class="note">Formulár je zatiaľ ukážkový — prihlásiť sa môžeš aj priamo na prvom stretnutí, 2. októbra.</p>
+    <button type="button" class="mapclose" id="signupClose">Zavrieť</button>
+  </form>
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
